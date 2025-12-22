@@ -1,0 +1,38 @@
+# ======================
+# Gruvbox Theme for Yazi
+# ======================
+
+[manager]
+cwd = { fg = "#fabd2f", bold = true }
+hovered = { fg = "#282828", bg = "#fabd2f" }
+preview = { bg = "#1d2021" }
+border = { fg = "#3c3836" }
+
+[status]
+separator = { fg = "#665c54" }
+progress = { fg = "#b8bb26" }
+mode_normal  = { fg = "#282828", bg = "#83a598", bold = true }
+mode_select  = { fg = "#282828", bg = "#d3869b", bold = true }
+mode_unset   = { fg = "#282828", bg = "#fe8019", bold = true }
+
+[filetype]
+directory = { fg = "#83a598" }   # blue
+text      = { fg = "#ebdbb2" }   # fg2
+image     = { fg = "#d3869b" }   # purple
+video     = { fg = "#fb4934" }   # red
+music     = { fg = "#b8bb26" }   # green
+binary    = { fg = "#fe8019" }   # orange
+
+[icon]
+# Gruvbox-ish file icons
+directory = ""
+file      = ""
+image     = "󰈟"
+video     = "󰕧"
+music     = "󰎈"
+document  = "󰈙"
+archive   = "󰀼"
+binary    = ""
+
+[preview]
+syntax_highlighter = "bat"  # Gruvbox colors if bat uses Gruvbox theme
