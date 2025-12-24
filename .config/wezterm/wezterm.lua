@@ -13,14 +13,17 @@ return {
 		bottom = 4,
 	},
 	keys = {
-		-- Command+A → Meta+A (Alt+A)
-		{
-			key = "a",
-			mods = "CMD",
-			action = act.SendKey({ key = "a", mods = "ALT" }),
-		},
+		{ key = "a", mods = "CMD", action = act.SendKey({ key = "a", mods = "CTRL|ALT" }) },
+		{ key = "s", mods = "CMD", action = act.SendKey({ key = "s", mods = "CTRL|ALT" }) },
+		{ key = "d", mods = "CMD", action = act.SendKey({ key = "d", mods = "CTRL|ALT" }) },
+		{ key = "f", mods = "CMD", action = act.SendKey({ key = "f", mods = "CTRL|ALT" }) },
+		{ key = "g", mods = "CMD", action = act.SendKey({ key = "g", mods = "CTRL|ALT" }) },
+		{ key = "k", mods = "CMD", action = act.SendKey({ key = "k", mods = "CTRL|ALT" }) },
+		{ key = "l", mods = "CMD", action = act.SendKey({ key = "l", mods = "CTRL|ALT" }) },
+		{ key = "r", mods = "CMD", action = act.SendKey({ key = "r", mods = "CTRL|ALT" }) },
+		{ key = "c", mods = "CMD", action = act.SendKey({ key = "c", mods = "CTRL|ALT" }) },
+		{ key = "y", mods = "CMD", action = act.SendKey({ key = "y", mods = "CTRL|ALT" }) },
 	},
-
 	-- ==============================
 	-- TAB BAR KOMPLETT AUS
 	-- ==============================

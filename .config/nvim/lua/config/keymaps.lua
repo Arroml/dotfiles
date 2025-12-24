@@ -37,8 +37,8 @@ vim.keymap.set('n', '<leader>ne', '<cmd>Noice errors<CR>', {
 vim.keymap.set('n', '<leader>cr', vim.lsp.buf.rename, { desc = 'Rename symbol' })
 -- Toggle für Benachrichtigungen
 local notify_muted = false
-vim.keymap.set('n', '<leader>j', '<cmd>cnext<CR>', { silent = true })
-vim.keymap.set('n', '<leader>k', '<cmd>cprev<CR>', { silent = true })
+vim.keymap.set('n', '<M-j>', '<cmd>cnext<CR>', { silent = true })
+vim.keymap.set('n', '<M-k>', '<cmd>cprev<CR>', { silent = true })
 
 vim.keymap.set('n', '<leader>a', 'ggVG"+y<C-o>', {
   desc = 'Copy entire buffer (visual)',
@@ -52,3 +52,9 @@ end, { desc = 'Copy visible window area' })
 vim.keymap.set({ 'n', 'v' }, 'x', '"_x')
 vim.keymap.set({ 'n', 'v' }, 'c', '"_c')
 vim.keymap.set('x', 'p', '"_dP')
+vim.api.nvim_create_autocmd('FileType', {
+  pattern = 'qf',
+  callback = function()
+    vim.keymap.set('n', 'q', '<cmd>cclose<CR>', { buffer = true, silent = true })
+  end,
+})
