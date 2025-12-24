@@ -7,8 +7,8 @@ return {
 	-- ==============================
 	window_decorations = "RESIZE", -- entfernt Titlebar + macOS Buttons
 	window_padding = {
-		left = 6,
-		right = 6,
+		left = 15,
+		right = 15,
 		top = 4,
 		bottom = 4,
 	},
