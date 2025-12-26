@@ -67,3 +67,6 @@ function zle-keymap-select {
 zle -N zle-keymap-select
 echo -ne "\e[5 q"
 export KEYTIMEOUT=1
+
+export EDITOR=nvim
+export VISUAL=nvim

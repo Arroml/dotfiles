@@ -21,7 +21,7 @@ return {
 		{ key = "k", mods = "CMD", action = act.SendKey({ key = "k", mods = "CTRL|ALT" }) },
 		{ key = "l", mods = "CMD", action = act.SendKey({ key = "l", mods = "CTRL|ALT" }) },
 		{ key = "r", mods = "CMD", action = act.SendKey({ key = "r", mods = "CTRL|ALT" }) },
-		{ key = "c", mods = "CMD", action = act.SendKey({ key = "c", mods = "CTRL|ALT" }) },
+		{ key = "t", mods = "CMD", action = act.SendKey({ key = "t", mods = "CTRL|ALT" }) },
 		{ key = "y", mods = "CMD", action = act.SendKey({ key = "y", mods = "CTRL|ALT" }) },
 	},
 	-- ==============================
@@ -60,5 +60,5 @@ return {
 	-- ==============================
 	-- KEIN FENSTER-TITEL-UPDATE
 	-- ==============================
-	window_close_confirmation = "NeverPrompt",
+	window_close_confirmation = "AlwaysPrompt",
 }

@@ -58,3 +58,4 @@ vim.api.nvim_create_autocmd('FileType', {
     vim.keymap.set('n', 'q', '<cmd>cclose<CR>', { buffer = true, silent = true })
   end,
 })
+vim.keymap.set('n', ',', ':', { noremap = true })
