@@ -25,6 +25,7 @@ return {
 		{ key = "y", mods = "CMD", action = act.SendKey({ key = "y", mods = "CTRL|ALT" }) },
 		{ key = "h", mods = "CMD", action = act.SendKey({ key = "h", mods = "CTRL|ALT" }) },
 		{ key = "j", mods = "CMD", action = act.SendKey({ key = "j", mods = "CTRL|ALT" }) },
+		{ key = "z", mods = "CMD", action = act.SendKey({ key = "_", mods = "CTRL" }) },
 	},
 	-- ==============================
 	-- TAB BAR KOMPLETT AUS
