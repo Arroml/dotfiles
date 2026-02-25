@@ -56,17 +56,6 @@ export PATH="/opt/homebrew/opt/qt/bin:$PATH"
 # Created by `pipx` on 2025-03-01 10:58:21
 export PATH="$PATH:/Users/alexanderroman/.local/bin"
 
-bindkey -v
-# Cursor für Vim-Mode (Insert = Strich | Normal = Block)
-function zle-keymap-select {
-  case $KEYMAP in
-    vicmd)      echo -ne "\e[1 q";;  # Block cursor
-    viins|main) echo -ne "\e[5 q";;  # Beam cursor
-  esac
-}
-zle -N zle-keymap-select
-echo -ne "\e[5 q"
-export KEYTIMEOUT=1
 
 export EDITOR=nvim
 export VISUAL=nvim
@@ -75,4 +64,7 @@ export VISUAL=nvim
 autoload -Uz edit-command-line
 zle -N edit-command-line
 bindkey '^x^e' edit-command-line
+
+bindkey -e
+echo -ne "\e[5 q"
 
