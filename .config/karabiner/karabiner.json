@@ -7,7 +7,7 @@
                         "description": "Change spacebar to left_shift. (Post spacebar if pressed alone)",
                         "manipulators": [
                             {
-                                "description": "Swallow hyper+b so it never reaches AeroSpace",
+                                "description": "Map exact hyper+b to screenshot before AeroSpace",
                                 "from": {
                                     "key_code": "b",
                                     "modifiers": {
@@ -22,7 +22,11 @@
                                         ]
                                     }
                                 },
-                                "to": [],
+                                "to": [
+                                    {
+                                        "shell_command": "/Users/alexanderroman/dotfiles/.config/bin/screenshot_to_clipboard.sh"
+                                    }
+                                ],
                                 "type": "basic"
                             },
                             {
@@ -102,7 +106,7 @@
                         "description": "CAPS to Hyper or Esc (If Alone)",
                         "manipulators": [
                             {
-                                "description": "Swallow hyper+b so it never reaches AeroSpace",
+                                "description": "Map exact hyper+b to screenshot before AeroSpace",
                                 "from": {
                                     "key_code": "b",
                                     "modifiers": {
@@ -117,7 +121,11 @@
                                         ]
                                     }
                                 },
-                                "to": [],
+                                "to": [
+                                    {
+                                        "shell_command": "/Users/alexanderroman/dotfiles/.config/bin/screenshot_to_clipboard.sh"
+                                    }
+                                ],
                                 "type": "basic"
                             },
                             {
