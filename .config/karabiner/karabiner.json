@@ -7,36 +7,6 @@
                         "description": "Change spacebar to left_shift. (Post spacebar if pressed alone)",
                         "manipulators": [
                             {
-                                "description": "Map spacebar+b to screenshot before Hyper shortcuts",
-                                "from": {
-                                    "simultaneous": [
-                                        {
-                                            "key_code": "spacebar"
-                                        },
-                                        {
-                                            "key_code": "b"
-                                        }
-                                    ],
-                                    "simultaneous_options": {
-                                        "key_down_order": "strict",
-                                        "key_up_order": "strict_inverse",
-                                        "detect_key_down_uninterruptedly": true,
-                                        "to_after_key_up": []
-                                    },
-                                    "modifiers": {
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "shell_command": "/Users/alexanderroman/dotfiles/.config/bin/screenshot_to_clipboard.sh"
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
                                 "from": {
                                     "key_code": "spacebar",
                                     "modifiers": {
@@ -58,29 +28,6 @@
                                 "to_if_alone": [
                                     {
                                         "key_code": "spacebar"
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "description": "Map hyper+b to macOS screenshot area shortcut",
-                                "from": {
-                                    "key_code": "b",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "command",
-                                            "shift",
-                                            "option",
-                                            "control"
-                                        ],
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "shell_command": "/Users/alexanderroman/dotfiles/.config/bin/screenshot_to_clipboard.sh"
                                     }
                                 ],
                                 "type": "basic"
@@ -136,36 +83,6 @@
                         "description": "CAPS to Hyper or Esc (If Alone)",
                         "manipulators": [
                             {
-                                "description": "Map caps_lock+b to screenshot before Hyper shortcuts",
-                                "from": {
-                                    "simultaneous": [
-                                        {
-                                            "key_code": "caps_lock"
-                                        },
-                                        {
-                                            "key_code": "b"
-                                        }
-                                    ],
-                                    "simultaneous_options": {
-                                        "key_down_order": "strict",
-                                        "key_up_order": "strict_inverse",
-                                        "detect_key_down_uninterruptedly": true,
-                                        "to_after_key_up": []
-                                    },
-                                    "modifiers": {
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "shell_command": "/Users/alexanderroman/dotfiles/.config/bin/screenshot_to_clipboard.sh"
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
                                 "from": {
                                     "key_code": "caps_lock",
                                     "modifiers": {}
@@ -183,29 +100,6 @@
                                 "to_if_alone": [
                                     {
                                         "key_code": "escape"
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "description": "Map hyper+b to macOS screenshot area shortcut",
-                                "from": {
-                                    "key_code": "b",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "command",
-                                            "shift",
-                                            "option",
-                                            "control"
-                                        ],
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "shell_command": "/Users/alexanderroman/dotfiles/.config/bin/screenshot_to_clipboard.sh"
                                     }
                                 ],
                                 "type": "basic"
