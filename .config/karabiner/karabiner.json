@@ -72,6 +72,9 @@
                                             "shift",
                                             "option",
                                             "control"
+                                        ],
+                                        "optional": [
+                                            "any"
                                         ]
                                     }
                                 },
@@ -194,6 +197,9 @@
                                             "shift",
                                             "option",
                                             "control"
+                                        ],
+                                        "optional": [
+                                            "any"
                                         ]
                                     }
                                 },
