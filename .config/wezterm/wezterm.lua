@@ -63,6 +63,11 @@ return {
 			action = act.SendKey({ key = "l", mods = "CTRL|ALT" }),
 		},
 		{
+			key = "i",
+			mods = "CMD",
+			action = act.SendKey({ key = "i", mods = "CTRL|ALT" }),
+		},
+		{
 			key = "mapped:ö",
 			mods = "CMD",
 			action = act.SendKey({ key = "o", mods = "CTRL|ALT" }),
