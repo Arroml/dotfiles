@@ -12,6 +12,8 @@ return {
 		top = 4,
 		bottom = 4,
 	},
+	send_composed_key_when_left_alt_is_pressed = false,
+	send_composed_key_when_right_alt_is_pressed = false,
 	keys = {
 		-- Command+A/S/D/F/G and H/J/K/L -> Ctrl+Alt chords for tmux pane navigation
 		{
@@ -63,6 +65,31 @@ return {
 			key = "k",
 			mods = "OPT",
 			action = act.SendKey({ key = "k", mods = "ALT" }),
+		},
+		{
+			key = "a",
+			mods = "OPT",
+			action = act.SendKey({ key = "a", mods = "ALT" }),
+		},
+		{
+			key = "s",
+			mods = "OPT",
+			action = act.SendKey({ key = "s", mods = "ALT" }),
+		},
+		{
+			key = "d",
+			mods = "OPT",
+			action = act.SendKey({ key = "d", mods = "ALT" }),
+		},
+		{
+			key = "f",
+			mods = "OPT",
+			action = act.SendKey({ key = "f", mods = "ALT" }),
+		},
+		{
+			key = "g",
+			mods = "OPT",
+			action = act.SendKey({ key = "g", mods = "ALT" }),
 		},
 	},
 
