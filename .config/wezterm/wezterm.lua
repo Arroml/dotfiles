@@ -59,6 +59,11 @@ return {
 			mods = "CMD",
 			action = act.SendKey({ key = "l", mods = "CTRL|ALT" }),
 		},
+		{
+			key = "k",
+			mods = "OPT",
+			action = act.SendKey({ key = "k", mods = "ALT" }),
+		},
 	},
 
 	-- ==============================
