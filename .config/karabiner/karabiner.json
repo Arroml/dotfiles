@@ -7,6 +7,36 @@
                         "description": "Change spacebar to left_shift. (Post spacebar if pressed alone)",
                         "manipulators": [
                             {
+                                "description": "Map spacebar+v to screenshot before Hyper shortcuts",
+                                "from": {
+                                    "simultaneous": [
+                                        {
+                                            "key_code": "spacebar"
+                                        },
+                                        {
+                                            "key_code": "v"
+                                        }
+                                    ],
+                                    "simultaneous_options": {
+                                        "key_down_order": "strict",
+                                        "key_up_order": "strict_inverse",
+                                        "detect_key_down_uninterruptedly": true,
+                                        "to_after_key_up": []
+                                    },
+                                    "modifiers": {
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "shell_command": "/Users/alexanderroman/dotfiles/.config/bin/screenshot_to_clipboard.sh"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
                                 "from": {
                                     "key_code": "spacebar",
                                     "modifiers": {
@@ -102,6 +132,36 @@
                     {
                         "description": "CAPS to Hyper or Esc (If Alone)",
                         "manipulators": [
+                            {
+                                "description": "Map caps_lock+v to screenshot before Hyper shortcuts",
+                                "from": {
+                                    "simultaneous": [
+                                        {
+                                            "key_code": "caps_lock"
+                                        },
+                                        {
+                                            "key_code": "v"
+                                        }
+                                    ],
+                                    "simultaneous_options": {
+                                        "key_down_order": "strict",
+                                        "key_up_order": "strict_inverse",
+                                        "detect_key_down_uninterruptedly": true,
+                                        "to_after_key_up": []
+                                    },
+                                    "modifiers": {
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "shell_command": "/Users/alexanderroman/dotfiles/.config/bin/screenshot_to_clipboard.sh"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
                             {
                                 "from": {
                                     "key_code": "caps_lock",
