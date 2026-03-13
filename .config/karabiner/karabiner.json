@@ -47,7 +47,7 @@
                                 },
                                 "to": [
                                     {
-                                        "shell_command": "screencapture -i -c"
+                                        "shell_command": "/Users/alexanderroman/dotfiles/.config/bin/screenshot_to_clipboard.sh"
                                     }
                                 ],
                                 "type": "basic"
@@ -139,7 +139,7 @@
                                 },
                                 "to": [
                                     {
-                                        "shell_command": "screencapture -i -c"
+                                        "shell_command": "/Users/alexanderroman/dotfiles/.config/bin/screenshot_to_clipboard.sh"
                                     }
                                 ],
                                 "type": "basic"
