@@ -41,7 +41,7 @@ return {
 			mods = "CMD",
 			action = act.SendKey({ key = "g", mods = "CTRL|ALT" }),
 		},
-		-- Command+H/J/I/L -> Ctrl+Alt chords for tmux pane navigation
+		-- Command+H/J/K/L -> Ctrl+Alt chords for tmux pane navigation
 		{
 			key = "h",
 			mods = "CMD",
@@ -53,11 +53,6 @@ return {
 			action = act.SendKey({ key = "j", mods = "CTRL|ALT" }),
 		},
 		{
-			key = "i",
-			mods = "CMD",
-			action = act.SendKey({ key = "i", mods = "CTRL|ALT" }),
-		},
-		{
 			key = "k",
 			mods = "CMD",
 			action = act.SendKey({ key = "k", mods = "CTRL|ALT" }),
@@ -66,6 +61,16 @@ return {
 			key = "l",
 			mods = "CMD",
 			action = act.SendKey({ key = "l", mods = "CTRL|ALT" }),
+		},
+		{
+			key = "mapped:ö",
+			mods = "CMD",
+			action = act.SendKey({ key = "o", mods = "CTRL|ALT" }),
+		},
+		{
+			key = "mapped:ä",
+			mods = "CMD",
+			action = act.SendKey({ key = "u", mods = "CTRL|ALT" }),
 		},
 	},
 
