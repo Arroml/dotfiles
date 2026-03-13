@@ -13,7 +13,7 @@ return {
 		bottom = 4,
 	},
 	keys = {
-		-- Command+A/S/D/F/G -> Ctrl+Alt+A/S/D/F/G for tmux pane navigation
+		-- Command+A/S/D/F/G and H/J/K/L -> Ctrl+Alt chords for tmux pane navigation
 		{
 			key = "a",
 			mods = "CMD",
@@ -38,6 +38,26 @@ return {
 			key = "g",
 			mods = "CMD",
 			action = act.SendKey({ key = "g", mods = "CTRL|ALT" }),
+		},
+		{
+			key = "h",
+			mods = "CMD",
+			action = act.SendKey({ key = "h", mods = "CTRL|ALT" }),
+		},
+		{
+			key = "j",
+			mods = "CMD",
+			action = act.SendKey({ key = "j", mods = "CTRL|ALT" }),
+		},
+		{
+			key = "k",
+			mods = "CMD",
+			action = act.SendKey({ key = "k", mods = "CTRL|ALT" }),
+		},
+		{
+			key = "l",
+			mods = "CMD",
+			action = act.SendKey({ key = "l", mods = "CTRL|ALT" }),
 		},
 	},
 
