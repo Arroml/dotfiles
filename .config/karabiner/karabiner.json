@@ -7,14 +7,14 @@
                         "description": "Change spacebar to left_shift. (Post spacebar if pressed alone)",
                         "manipulators": [
                             {
-                                "description": "Map spacebar+v to screenshot before Hyper shortcuts",
+                                "description": "Map spacebar+b to screenshot before Hyper shortcuts",
                                 "from": {
                                     "simultaneous": [
                                         {
                                             "key_code": "spacebar"
                                         },
                                         {
-                                            "key_code": "v"
+                                            "key_code": "b"
                                         }
                                     ],
                                     "simultaneous_options": {
@@ -63,9 +63,9 @@
                                 "type": "basic"
                             },
                             {
-                                "description": "Map hyper+v to macOS screenshot area shortcut",
+                                "description": "Map hyper+b to macOS screenshot area shortcut",
                                 "from": {
-                                    "key_code": "v",
+                                    "key_code": "b",
                                     "modifiers": {
                                         "mandatory": [
                                             "command",
@@ -133,14 +133,14 @@
                         "description": "CAPS to Hyper or Esc (If Alone)",
                         "manipulators": [
                             {
-                                "description": "Map caps_lock+v to screenshot before Hyper shortcuts",
+                                "description": "Map caps_lock+b to screenshot before Hyper shortcuts",
                                 "from": {
                                     "simultaneous": [
                                         {
                                             "key_code": "caps_lock"
                                         },
                                         {
-                                            "key_code": "v"
+                                            "key_code": "b"
                                         }
                                     ],
                                     "simultaneous_options": {
@@ -185,9 +185,9 @@
                                 "type": "basic"
                             },
                             {
-                                "description": "Map hyper+v to macOS screenshot area shortcut",
+                                "description": "Map hyper+b to macOS screenshot area shortcut",
                                 "from": {
-                                    "key_code": "v",
+                                    "key_code": "b",
                                     "modifiers": {
                                         "mandatory": [
                                             "command",

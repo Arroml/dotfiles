@@ -58,7 +58,7 @@ inner.horizontal =10
 inner.vertical =  10 
 outer.left =      10 
 outer.bottom =    10 
-outer.top =        10
+outer.top =        0
 outer.right =     10 
 
 # 'main' binding mode declaration
@@ -115,7 +115,7 @@ cmd-alt-ctrl-shift-s = 'workspace s'
 cmd-alt-ctrl-shift-d = 'workspace d'
 cmd-alt-ctrl-shift-f = 'workspace f'
 cmd-alt-ctrl-shift-g = 'workspace g'
-cmd-alt-ctrl-shift-v = 'exec-and-forget /Users/alexanderroman/dotfiles/.config/bin/screenshot_to_clipboard.sh'
+cmd-alt-ctrl-shift-b = 'exec-and-forget /Users/alexanderroman/dotfiles/.config/bin/screenshot_to_clipboard.sh'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
 alt-shift-a = 'move-node-to-workspace a'
