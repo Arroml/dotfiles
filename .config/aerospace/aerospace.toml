@@ -109,6 +109,13 @@ alt-shift-l = 'move right'
 alt-shift-minus = 'resize smart -50'
 alt-shift-equal = 'resize smart +50'
 
+# See: https://nikitabobko.github.io/AeroSpace/commands#workspace
+cmd-alt-ctrl-shift-a = 'workspace a'
+cmd-alt-ctrl-shift-s = 'workspace s'
+cmd-alt-ctrl-shift-d = 'workspace d'
+cmd-alt-ctrl-shift-f = 'workspace f'
+cmd-alt-ctrl-shift-g = 'workspace g'
+
 # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
 alt-shift-a = 'move-node-to-workspace a'
 alt-shift-s = 'move-node-to-workspace s'
