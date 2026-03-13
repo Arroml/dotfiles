@@ -13,11 +13,31 @@ return {
 		bottom = 4,
 	},
 	keys = {
-		-- Command+A → Meta+A (Alt+A)
+		-- Command+A/S/D/F/G -> Ctrl+Alt+A/S/D/F/G for tmux pane navigation
 		{
 			key = "a",
 			mods = "CMD",
-			action = act.SendKey({ key = "a", mods = "ALT" }),
+			action = act.SendKey({ key = "a", mods = "CTRL|ALT" }),
+		},
+		{
+			key = "s",
+			mods = "CMD",
+			action = act.SendKey({ key = "s", mods = "CTRL|ALT" }),
+		},
+		{
+			key = "d",
+			mods = "CMD",
+			action = act.SendKey({ key = "d", mods = "CTRL|ALT" }),
+		},
+		{
+			key = "f",
+			mods = "CMD",
+			action = act.SendKey({ key = "f", mods = "CTRL|ALT" }),
+		},
+		{
+			key = "g",
+			mods = "CMD",
+			action = act.SendKey({ key = "g", mods = "CTRL|ALT" }),
 		},
 	},
 
