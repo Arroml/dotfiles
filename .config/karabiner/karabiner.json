@@ -33,9 +33,9 @@
                                 "type": "basic"
                             },
                             {
-                                "description": "Map hyper+4 to macOS screenshot area shortcut",
+                                "description": "Map hyper+v to macOS screenshot area shortcut",
                                 "from": {
-                                    "key_code": "4",
+                                    "key_code": "v",
                                     "modifiers": {
                                         "mandatory": [
                                             "command",
@@ -125,9 +125,9 @@
                                 "type": "basic"
                             },
                             {
-                                "description": "Map hyper+4 to macOS screenshot area shortcut",
+                                "description": "Map hyper+v to macOS screenshot area shortcut",
                                 "from": {
-                                    "key_code": "4",
+                                    "key_code": "v",
                                     "modifiers": {
                                         "mandatory": [
                                             "command",
