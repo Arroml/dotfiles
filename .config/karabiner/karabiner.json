@@ -7,6 +7,25 @@
                         "description": "Change spacebar to left_shift. (Post spacebar if pressed alone)",
                         "manipulators": [
                             {
+                                "description": "Swallow hyper+b so it never reaches AeroSpace",
+                                "from": {
+                                    "key_code": "b",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_command",
+                                            "left_control",
+                                            "left_option",
+                                            "left_shift"
+                                        ],
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [],
+                                "type": "basic"
+                            },
+                            {
                                 "from": {
                                     "key_code": "spacebar",
                                     "modifiers": {
@@ -82,6 +101,25 @@
                     {
                         "description": "CAPS to Hyper or Esc (If Alone)",
                         "manipulators": [
+                            {
+                                "description": "Swallow hyper+b so it never reaches AeroSpace",
+                                "from": {
+                                    "key_code": "b",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_command",
+                                            "left_control",
+                                            "left_option",
+                                            "left_shift"
+                                        ],
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [],
+                                "type": "basic"
+                            },
                             {
                                 "from": {
                                     "key_code": "caps_lock",
