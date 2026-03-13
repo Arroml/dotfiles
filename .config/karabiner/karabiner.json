@@ -9,27 +9,45 @@
                             {
                                 "from": {
                                     "key_code": "spacebar",
-                                    "modifiers": { "optional": ["any"] }
+                                    "modifiers": {
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
                                 },
                                 "to": [
                                     {
                                         "key_code": "left_shift",
-                                        "modifiers": ["left_command", "left_control", "left_option"]
+                                        "modifiers": [
+                                            "left_command",
+                                            "left_control",
+                                            "left_option"
+                                        ]
                                     }
                                 ],
-                                "to_if_alone": [{ "key_code": "spacebar" }],
+                                "to_if_alone": [
+                                    {
+                                        "key_code": "spacebar"
+                                    }
+                                ],
                                 "type": "basic"
                             },
                             {
                                 "description": "Map hyper+4 to macOS screenshot area shortcut",
                                 "from": {
                                     "key_code": "4",
-                                    "modifiers": { "mandatory": ["command", "shift", "option", "control"] }
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "command",
+                                            "shift",
+                                            "option",
+                                            "control"
+                                        ]
+                                    }
                                 },
                                 "to": [
                                     {
-                                        "key_code": "4",
-                                        "modifiers": ["left_command", "left_control", "left_shift"]
+                                        "shell_command": "screencapture -i -c"
                                     }
                                 ],
                                 "type": "basic"
@@ -38,7 +56,13 @@
                                 "description": "Avoid starting sysdiagnose with the built-in macOS shortcut cmd+shift+option+ctrl+,",
                                 "from": {
                                     "key_code": "comma",
-                                    "modifiers": { "mandatory": ["command", "option", "control"] }
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "command",
+                                            "option",
+                                            "control"
+                                        ]
+                                    }
                                 },
                                 "to": [],
                                 "type": "basic"
@@ -47,7 +71,13 @@
                                 "description": "Avoid starting sysdiagnose with the built-in macOS shortcut cmd+shift+option+ctrl+.",
                                 "from": {
                                     "key_code": "period",
-                                    "modifiers": { "mandatory": ["command", "option", "control"] }
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "command",
+                                            "option",
+                                            "control"
+                                        ]
+                                    }
                                 },
                                 "to": [],
                                 "type": "basic"
@@ -56,7 +86,13 @@
                                 "from": {
                                     "description": "Avoid starting sysdiagnose with the built-in macOS shortcut cmd+shift+option+ctrl+/",
                                     "key_code": "slash",
-                                    "modifiers": { "mandatory": ["command", "option", "control"] }
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "command",
+                                            "option",
+                                            "control"
+                                        ]
+                                    }
                                 },
                                 "to": [],
                                 "type": "basic"
@@ -74,22 +110,36 @@
                                 "to": [
                                     {
                                         "key_code": "left_shift",
-                                        "modifiers": ["left_command", "left_control", "left_option"]
+                                        "modifiers": [
+                                            "left_command",
+                                            "left_control",
+                                            "left_option"
+                                        ]
                                     }
                                 ],
-                                "to_if_alone": [{ "key_code": "escape" }],
+                                "to_if_alone": [
+                                    {
+                                        "key_code": "escape"
+                                    }
+                                ],
                                 "type": "basic"
                             },
                             {
                                 "description": "Map hyper+4 to macOS screenshot area shortcut",
                                 "from": {
                                     "key_code": "4",
-                                    "modifiers": { "mandatory": ["command", "shift", "option", "control"] }
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "command",
+                                            "shift",
+                                            "option",
+                                            "control"
+                                        ]
+                                    }
                                 },
                                 "to": [
                                     {
-                                        "key_code": "4",
-                                        "modifiers": ["left_command", "left_control", "left_shift"]
+                                        "shell_command": "screencapture -i -c"
                                     }
                                 ],
                                 "type": "basic"
@@ -98,7 +148,14 @@
                                 "description": "Avoid starting sysdiagnose with the built-in macOS shortcut cmd+shift+option+ctrl+,",
                                 "from": {
                                     "key_code": "comma",
-                                    "modifiers": { "mandatory": ["command", "shift", "option", "control"] }
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "command",
+                                            "shift",
+                                            "option",
+                                            "control"
+                                        ]
+                                    }
                                 },
                                 "to": [],
                                 "type": "basic"
@@ -107,7 +164,14 @@
                                 "description": "Avoid starting sysdiagnose with the built-in macOS shortcut cmd+shift+option+ctrl+.",
                                 "from": {
                                     "key_code": "period",
-                                    "modifiers": { "mandatory": ["command", "shift", "option", "control"] }
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "command",
+                                            "shift",
+                                            "option",
+                                            "control"
+                                        ]
+                                    }
                                 },
                                 "to": [],
                                 "type": "basic"
@@ -116,7 +180,14 @@
                                 "from": {
                                     "description": "Avoid starting sysdiagnose with the built-in macOS shortcut cmd+shift+option+ctrl+/",
                                     "key_code": "slash",
-                                    "modifiers": { "mandatory": ["command", "shift", "option", "control"] }
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "command",
+                                            "shift",
+                                            "option",
+                                            "control"
+                                        ]
+                                    }
                                 },
                                 "to": [],
                                 "type": "basic"
@@ -130,44 +201,76 @@
                                 "from": {
                                     "key_code": "h",
                                     "modifiers": {
-                                        "mandatory": ["right_command"],
-                                        "optional": ["any"]
+                                        "mandatory": [
+                                            "right_command"
+                                        ],
+                                        "optional": [
+                                            "any"
+                                        ]
                                     }
                                 },
-                                "to": [{ "key_code": "left_arrow" }],
+                                "to": [
+                                    {
+                                        "key_code": "left_arrow"
+                                    }
+                                ],
                                 "type": "basic"
                             },
                             {
                                 "from": {
                                     "key_code": "j",
                                     "modifiers": {
-                                        "mandatory": ["right_command"],
-                                        "optional": ["any"]
+                                        "mandatory": [
+                                            "right_command"
+                                        ],
+                                        "optional": [
+                                            "any"
+                                        ]
                                     }
                                 },
-                                "to": [{ "key_code": "down_arrow" }],
+                                "to": [
+                                    {
+                                        "key_code": "down_arrow"
+                                    }
+                                ],
                                 "type": "basic"
                             },
                             {
                                 "from": {
                                     "key_code": "k",
                                     "modifiers": {
-                                        "mandatory": ["right_command"],
-                                        "optional": ["any"]
+                                        "mandatory": [
+                                            "right_command"
+                                        ],
+                                        "optional": [
+                                            "any"
+                                        ]
                                     }
                                 },
-                                "to": [{ "key_code": "up_arrow" }],
+                                "to": [
+                                    {
+                                        "key_code": "up_arrow"
+                                    }
+                                ],
                                 "type": "basic"
                             },
                             {
                                 "from": {
                                     "key_code": "l",
                                     "modifiers": {
-                                        "mandatory": ["right_command"],
-                                        "optional": ["any"]
+                                        "mandatory": [
+                                            "right_command"
+                                        ],
+                                        "optional": [
+                                            "any"
+                                        ]
                                     }
                                 },
-                                "to": [{ "key_code": "right_arrow" }],
+                                "to": [
+                                    {
+                                        "key_code": "right_arrow"
+                                    }
+                                ],
                                 "type": "basic"
                             }
                         ]
@@ -176,7 +279,9 @@
             },
             "name": "Default profile",
             "selected": true,
-            "virtual_hid_keyboard": { "keyboard_type_v2": "ansi" }
+            "virtual_hid_keyboard": {
+                "keyboard_type_v2": "ansi"
+            }
         }
     ],
     "rules": [
@@ -186,15 +291,27 @@
                 {
                     "from": {
                         "key_code": "caps_lock",
-                        "modifiers": { "optional": ["any"] }
+                        "modifiers": {
+                            "optional": [
+                                "any"
+                            ]
+                        }
                     },
                     "to": [
                         {
                             "key_code": "left_shift",
-                            "modifiers": ["left_control", "left_option", "left_command"]
+                            "modifiers": [
+                                "left_control",
+                                "left_option",
+                                "left_command"
+                            ]
                         }
                     ],
-                    "to_if_alone": [{ "key_code": "escape" }],
+                    "to_if_alone": [
+                        {
+                            "key_code": "escape"
+                        }
+                    ],
                     "type": "basic"
                 }
             ]
