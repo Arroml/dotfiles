@@ -8,6 +8,10 @@ cleanup() {
 
 trap cleanup EXIT
 
+# Give the keyboard firmware time to release Hyper modifiers before the
+# interactive screenshot tool starts.
+sleep 0.25
+
 /usr/sbin/screencapture -i -x "$tmp_file" || exit 1
 
 /usr/bin/osascript <<OSA
