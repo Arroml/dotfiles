@@ -12,7 +12,81 @@ return {
 		top = 4,
 		bottom = 4,
 	},
+	send_composed_key_when_left_alt_is_pressed = false,
+	send_composed_key_when_right_alt_is_pressed = false,
 	keys = {
+		-- Command+A/S/D/F/G -> Ctrl+Alt chords for tmux window navigation
+		{
+			key = "a",
+			mods = "CMD",
+			action = act.SendKey({ key = "a", mods = "CTRL|ALT" }),
+		},
+		{
+			key = "s",
+			mods = "CMD",
+			action = act.SendKey({ key = "s", mods = "CTRL|ALT" }),
+		},
+		{
+			key = "d",
+			mods = "CMD",
+			action = act.SendKey({ key = "d", mods = "CTRL|ALT" }),
+		},
+		{
+			key = "f",
+			mods = "CMD",
+			action = act.SendKey({ key = "f", mods = "CTRL|ALT" }),
+		},
+		{
+			key = "g",
+			mods = "CMD",
+			action = act.SendKey({ key = "g", mods = "CTRL|ALT" }),
+		},
+		-- Command+H/J/K/L -> Ctrl+Alt chords for tmux pane navigation
+		{
+			key = "h",
+			mods = "CMD",
+			action = act.SendKey({ key = "h", mods = "CTRL|ALT" }),
+		},
+		{
+			key = "j",
+			mods = "CMD",
+			action = act.SendKey({ key = "j", mods = "CTRL|ALT" }),
+		},
+		{
+			key = "k",
+			mods = "CMD",
+			action = act.SendKey({ key = "k", mods = "CTRL|ALT" }),
+		},
+		{
+			key = "l",
+			mods = "CMD",
+			action = act.SendKey({ key = "l", mods = "CTRL|ALT" }),
+		},
+		{
+			key = "i",
+			mods = "CMD",
+			action = act.SendKey({ key = "i", mods = "ALT" }),
+		},
+		{
+			key = "u",
+			mods = "CMD",
+			action = act.SendKey({ key = "u", mods = "ALT" }),
+		},
+		{
+			key = "w",
+			mods = "CMD",
+			action = act.SendKey({ key = "w", mods = "ALT" }),
+		},
+		{
+			key = "mapped:ö",
+			mods = "CMD",
+			action = act.SendKey({ key = "o", mods = "CTRL|ALT" }),
+		},
+		{
+			key = "mapped:ä",
+			mods = "CMD",
+			action = act.SendKey({ key = ";", mods = "ALT" }),
+		},
 		{ key = "a", mods = "CMD", action = act.SendKey({ key = "a", mods = "CTRL|ALT" }) },
 		{ key = "s", mods = "CMD", action = act.SendKey({ key = "s", mods = "CTRL|ALT" }) },
 		{ key = "d", mods = "CMD", action = act.SendKey({ key = "d", mods = "CTRL|ALT" }) },

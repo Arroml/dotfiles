@@ -1,8 +1,14 @@
+Summary
 type(scope): short summary
 
 Why:
 - 
 
+How:
+- 
+
+Verification:
+- 
 What:
 - 
 

@@ -1,0 +1,16 @@
+[user]
+	name = Arroml
+	email = 107889797+Arroml@users.noreply.github.com
+[init]
+	default = branch
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[url "git@github.com:"]
+	insteadOf = https://github.com/
+[url "https://github.com/"]
+	insteadOf = git@github.com:
+[commit]
+	template = /Users/alexanderroman/.config/git/commit-template.txt

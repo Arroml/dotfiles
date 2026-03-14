@@ -56,6 +56,8 @@ export PATH="/opt/homebrew/opt/qt/bin:$PATH"
 # Created by `pipx` on 2025-03-01 10:58:21
 export PATH="$PATH:/Users/alexanderroman/.local/bin"
 
+bindkey -e
+echo -ne "\e[5 q"
 
 export EDITOR=nvim
 export VISUAL=nvim
