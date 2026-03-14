@@ -7,8 +7,8 @@ return {
 	-- ==============================
 	window_decorations = "RESIZE", -- entfernt Titlebar + macOS Buttons
 	window_padding = {
-		left = 6,
-		right = 6,
+		left = 15,
+		right = 15,
 		top = 4,
 		bottom = 4,
 	},
@@ -87,8 +87,20 @@ return {
 			mods = "CMD",
 			action = act.SendKey({ key = ";", mods = "ALT" }),
 		},
+		{ key = "a", mods = "CMD", action = act.SendKey({ key = "a", mods = "CTRL|ALT" }) },
+		{ key = "s", mods = "CMD", action = act.SendKey({ key = "s", mods = "CTRL|ALT" }) },
+		{ key = "d", mods = "CMD", action = act.SendKey({ key = "d", mods = "CTRL|ALT" }) },
+		{ key = "f", mods = "CMD", action = act.SendKey({ key = "f", mods = "CTRL|ALT" }) },
+		{ key = "g", mods = "CMD", action = act.SendKey({ key = "g", mods = "CTRL|ALT" }) },
+		{ key = "k", mods = "CMD", action = act.SendKey({ key = "k", mods = "CTRL|ALT" }) },
+		{ key = "l", mods = "CMD", action = act.SendKey({ key = "l", mods = "CTRL|ALT" }) },
+		{ key = "r", mods = "CMD", action = act.SendKey({ key = "r", mods = "CTRL|ALT" }) },
+		{ key = "t", mods = "CMD", action = act.SendKey({ key = "t", mods = "CTRL|ALT" }) },
+		{ key = "r", mods = "CMD", action = act.SendKey({ key = "y", mods = "CTRL|ALT" }) },
+		{ key = "h", mods = "CMD", action = act.SendKey({ key = "h", mods = "CTRL|ALT" }) },
+		{ key = "j", mods = "CMD", action = act.SendKey({ key = "j", mods = "CTRL|ALT" }) },
+		{ key = "z", mods = "CMD", action = act.SendKey({ key = "_", mods = "CTRL" }) },
 	},
-
 	-- ==============================
 	-- TAB BAR KOMPLETT AUS
 	-- ==============================
@@ -125,5 +137,5 @@ return {
 	-- ==============================
 	-- KEIN FENSTER-TITEL-UPDATE
 	-- ==============================
-	window_close_confirmation = "NeverPrompt",
+	window_close_confirmation = "AlwaysPrompt",
 }

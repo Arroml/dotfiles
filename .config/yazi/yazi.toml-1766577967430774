@@ -3,5 +3,5 @@
 [yazi]
 # Dateien ins macOS-Clipboard kopieren (für WhatsApp, Discord, etc.)
 copy_cmd = 'osascript -e "set the clipboard to POSIX file \"%s\""'
-[mgr]
+[manager]
 editor = "nvim"

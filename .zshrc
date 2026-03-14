@@ -58,3 +58,15 @@ export PATH="$PATH:/Users/alexanderroman/.local/bin"
 
 bindkey -e
 echo -ne "\e[5 q"
+
+export EDITOR=nvim
+export VISUAL=nvim
+
+# Open buffer line in editor
+autoload -Uz edit-command-line
+zle -N edit-command-line
+bindkey '^x^e' edit-command-line
+
+bindkey -e
+echo -ne "\e[5 q"
+
