@@ -134,7 +134,6 @@ link_dotfiles() {
   link_path "${DOTFILES_DIR}/.config/tmux" "${HOME}/.config/tmux"
   link_path "${DOTFILES_DIR}/.config/wezterm" "${HOME}/.config/wezterm"
   link_path "${DOTFILES_DIR}/.config/yazi" "${HOME}/.config/yazi"
-  link_path "${DOTFILES_DIR}/.config/sketchybar" "${HOME}/.config/sketchybar"
   link_path "${DOTFILES_DIR}/.config/karabiner" "${HOME}/.config/karabiner"
   link_path "${DOTFILES_DIR}/.config/aerospace" "${HOME}/.config/aerospace"
   link_path "${DOTFILES_DIR}/.config/tmux/tmux.conf" "${HOME}/.tmux.conf"
