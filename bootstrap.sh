@@ -129,6 +129,8 @@ install_fzf_shell_integration() {
 }
 
 link_dotfiles() {
+  link_path "${DOTFILES_DIR}/.gitconfig" "${HOME}/.gitconfig"
+  link_path "${DOTFILES_DIR}/.config/git" "${HOME}/.config/git"
   link_path "${DOTFILES_DIR}/.zshrc" "${HOME}/.zshrc"
   link_path "${DOTFILES_DIR}/.config/nvim" "${HOME}/.config/nvim"
   link_path "${DOTFILES_DIR}/.config/tmux" "${HOME}/.config/tmux"
